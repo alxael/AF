@@ -3,7 +3,6 @@
 # Not started yet
 - Kruskal minimum spanning tree
 - Disjoint-set data structure
-- Dijkstra shortest paths
 - Bellman-Ford shortest paths
 - Acyclic directed graph shortest paths
 - Ford-Fulkerson maximum flow 
@@ -18,4 +17,5 @@
 
 # Finished
 - Topological sort
+- Dijkstra shortest paths
 - Floyd-Warshall shortest paths

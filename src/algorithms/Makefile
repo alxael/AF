@@ -24,6 +24,9 @@ disjoint-set-union:
 kruskal:
 	g++ -std=c++23 ./kruskal/main.cpp -o ../../build/kruskal
 
+prim:
+	g++ -std=c++23 ./prim/main.cpp -o ../../build/prim
+
 # Utilities
 clean:
 	rm -rf ../../build/*

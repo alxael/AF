@@ -20,6 +20,10 @@ bellman-ford: # add optimised version
 disjoint-set-union:
 	g++ -std=c++23 ./disjoint-set-union/main.cpp -o ../../build/disjoint-set-union
 
+# Minimum spanning tree
+kruskal:
+	g++ -std=c++23 ./kruskal/main.cpp -o ../../build/kruskal
+
 # Utilities
 clean:
 	rm -rf ../../build/*

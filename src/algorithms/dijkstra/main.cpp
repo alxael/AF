@@ -35,7 +35,7 @@ int main()
     ifstream in("dijkstra.in");
     ofstream out("dijkstra.out");
 
-    uint nodeCount, vertexCount, source, destination, cost;
+    int nodeCount, vertexCount, source, destination, cost;
     in >> nodeCount >> vertexCount;
 
     vector<vector<pair<int, int>>> costMatrix(nodeCount + 1);

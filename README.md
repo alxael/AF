@@ -10,7 +10,6 @@
 - Knuth-Morris-Pratt
 
 # Work in progress
-- Kruskal minimum spanning tree
 - Prim minimum spanning tree
 - Strongly connected components
 
@@ -20,3 +19,4 @@
 - Floyd-Warshall shortest paths
 - Bellman-Ford shortest paths
 - Disjoint-set data structure
+- Kruskal minimum spanning tree

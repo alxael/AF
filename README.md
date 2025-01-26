@@ -3,7 +3,7 @@
 # Not started yet
 - Kruskal minimum spanning tree
 - Disjoint-set data structure
-- Bellman-Ford shortest paths
+- Prim's shortest paths
 - Acyclic directed graph shortest paths
 - Ford-Fulkerson maximum flow 
 - Edmonds-Karp maximum flow
@@ -14,6 +14,7 @@
 
 # Work in progress
 - Strongly connected components
+- Bellman-Ford shortest paths
 
 # Finished
 - Topological sort

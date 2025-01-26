@@ -16,6 +16,9 @@ floyd-warshall:
 bellman-ford: # add optimised version
 	g++ -std=c++23 ./bellman-ford/main.cpp -o ../../build/bellman-ford
 
+directed-acyclic-graph:
+	g++ -std=c++23 ./directed-acyclic-graph/main.cpp -o ../../build/directed-acyclic-graph
+
 # Disjoint-set data structure
 disjoint-set-union:
 	g++ -std=c++23 ./disjoint-set-union/main.cpp -o ../../build/disjoint-set-union

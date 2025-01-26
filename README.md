@@ -9,7 +9,6 @@
 - Knuth-Morris-Pratt
 
 ## Work in progress
-- Acyclic directed graph shortest paths
 - Strongly connected components
 
 ## Finished
@@ -20,3 +19,4 @@
 - Disjoint-set data structure
 - Kruskal minimum spanning tree
 - Prim minimum spanning tree
+- Acyclic directed graph shortest paths

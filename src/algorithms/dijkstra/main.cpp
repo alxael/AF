@@ -35,7 +35,7 @@ int main()
     int nodeCount, vertexCount, source, destination, cost;
     in >> nodeCount >> vertexCount;
 
-    vector<vector<pair<int, int>>> costMatrix(nodeCount + 1, vector<pair<int, int>>());
+    vector<vector<pair<int, int>>> costMatrix(nodeCount + 1, vector<pair<int, int>>(100));
     vector<bool> visited(nodeCount + 1, false);
     vector<int> answer(nodeCount + 1, numeric_limits<int>::max());
 

@@ -1,9 +1,6 @@
 # AF
 
 # Not started yet
-- Kruskal minimum spanning tree
-- Disjoint-set data structure
-- Prim's shortest paths
 - Acyclic directed graph shortest paths
 - Ford-Fulkerson maximum flow 
 - Edmonds-Karp maximum flow
@@ -13,10 +10,13 @@
 - Knuth-Morris-Pratt
 
 # Work in progress
+- Kruskal minimum spanning tree
+- Prim minimum spanning tree
 - Strongly connected components
-- Bellman-Ford shortest paths
 
 # Finished
 - Topological sort
 - Dijkstra shortest paths
 - Floyd-Warshall shortest paths
+- Bellman-Ford shortest paths
+- Disjoint-set data structure

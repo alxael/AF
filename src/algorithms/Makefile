@@ -30,6 +30,10 @@ kruskal:
 prim:
 	g++ -std=c++23 ./prim/main.cpp -o ../../build/prim
 
+# Maximum flows
+ford-fulkerson:
+	g++ -std=c++23 ./ford-fulkerson/main.cpp -o ../../build/ford-fulkerson
+
 # Utilities
 clean:
 	rm -rf ../../build/*

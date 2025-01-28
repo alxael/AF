@@ -92,23 +92,46 @@ int edmondsKarp(int nodeCount, int startNode, int endNode, vector<vector<pair<in
     return maxFlow;
 }
 
+void printAdjacencyList(int nodeCount, vector<vector<pair<int, int>>> &adjacencyList)
+{
+    for (int nodeIndex = 1; nodeIndex <= nodeCount; nodeIndex++)
+        for (auto vertex : adjacencyList[nodeIndex])
+            cout << '(' << nodeIndex << ',' << vertex.first << ',' << vertex.second << ")\n";
+}
+
 int main()
 {
-    ifstream in("maxflow.in");
-    ofstream out("maxflow.out");
+    int personCount, centerCount, dosageCount, personCenterCount;
+    cin >> personCount >> centerCount;
 
-    int nodeCount, vertexCount, source, destination, maxFlow;
-    in >> nodeCount >> vertexCount;
+    vector<vector<pair<int, int>>> adjacencyList(personCount + centerCount + 3);
 
-    vector<vector<pair<int, int>>> adjacencyList(nodeCount + 1);
+    // node 1 is the source
+    // node 2 is the sink
+    // nodes 3 ... personCount + 2 are people
+    // nodes personCount + 3 ... personCount + centerCount + 2 are centers
 
-    for (int vertexIndex = 1; vertexIndex <= vertexCount; vertexIndex++)
+    for (int centerIndex = 1; centerIndex <= centerCount; centerIndex++)
     {
-        in >> source >> destination >> maxFlow;
-        adjacencyList[source].push_back({destination, maxFlow});
+        cin >> dosageCount;
+        adjacencyList[2 + personCount + centerIndex].push_back({2, dosageCount});
     }
 
-    maxFlow = edmondsKarp(nodeCount, 1, nodeCount, adjacencyList);
-    out << maxFlow;
+    for (int personIndex = 1; personIndex <= personCount; personIndex++)
+    {
+        cin >> personCenterCount;
+
+        int centerIndex;
+        for (int personCenterIndex = 1; personCenterIndex <= personCenterCount; personCenterIndex++)
+        {
+            cin >> centerIndex;
+            adjacencyList[2 + personIndex].push_back({2 + personCount + centerIndex, 1});
+        }
+
+        adjacencyList[1].push_back({2 + personIndex, 1});
+    }
+
+    int maxFlow = edmondsKarp(personCount + centerCount + 2, 1, 2, adjacencyList);
+    cout << personCount - maxFlow;
     return 0;
 }

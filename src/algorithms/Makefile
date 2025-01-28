@@ -34,6 +34,9 @@ prim:
 ford-fulkerson:
 	g++ -std=c++23 ./ford-fulkerson/main.cpp -o ../../build/ford-fulkerson
 
+edmonds-karp:
+	g++ -std=c++23 ./edmonds-karp/main.cpp -o ../../build/edmonds-karp
+
 # Utilities
 clean:
 	rm -rf ../../build/*
